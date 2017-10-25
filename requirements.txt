@@ -1,0 +1,10 @@
+bencoder
+psycopg2
+libtorrent
+redis
+requests
+parse-torrent-name
+bencodepy
+aiodns
+websocket-client
+

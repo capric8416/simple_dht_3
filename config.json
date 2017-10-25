@@ -1,0 +1,102 @@
+{
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "socket_timeout": 20,
+    "db": 0,
+    "password": "a47aa3be195ac487aedb26fc1937d262e64337b47a2c076d354bb0b543cca84e46a635243b0f990c460d3eccdab763dfaeaca0ca08ce547c58036da6e2fe3a33"
+  },
+
+
+  "redis_keys": {
+    "torrent_database_tasks": "torrent_database_tasks",
+    "torrent_table_tasks": "torrent_table_tasks?database={}"
+  },
+
+
+  "postgres": {
+    "host": "108.61.219.12",
+    "user": "postgres",
+    "password": "979a26b74f9b4094291548d8635568b87dd62fa5",
+    "database": ""
+  },
+
+
+  "redis_postgres": {
+    "database_prefix": "db_",
+    "table_prefix": "tb_",
+    "databases": 256,
+    "tables": 256
+  },
+
+
+  "elastic_search": {
+    "hosts": ["127.0.0.1:9200"],
+    "timeout": 20
+  },
+
+  "es_index_type": {
+    "torrent_info": {
+      "index": "torrent",
+      "doc_type": "info_hash"
+    }
+  },
+
+
+  "magnet": {
+    "port": 6881
+  },
+
+
+  "torrent": {
+    "port": 7881
+  },
+
+
+  "web_socket": {
+    "keys": {
+      "action": "action",
+      "data": "data",
+      "postfix": "postfix"
+    },
+    "postfixes": {
+      "database": "database",
+      "table": "table"
+    },
+    "actions": {
+      "task_open": "task_open",
+      "task_info": "task_info",
+      "task_close": "task_close"
+    }
+  },
+
+
+  "logging": {
+    "level": 20,
+    "filemode": "a",
+    "filename": "",
+    "datefmt": "%Y-%m-%d %H:%M:%S",
+    "format": "*%(levelname)s*  %(asctime)s %(filename)s#%(lineno)d  %(message)s"
+  },
+
+
+  "bootstrap_nodes": [
+    ["router.bittorrent.com", 6881],
+    ["router.utorrent.com", 6881],
+    ["router.bitcomet.com", 6881],
+    ["dht.transmissionbt.com", 6881]
+  ],
+
+
+  "torrent_cache_services": {
+    "torcache": "https://torcache.net/torrent/{}.torrent",
+    "btbox": "http://bt.box.n0808.com/{}/{}/{}.torrent"
+  },
+
+
+  "requests": {
+    "timeout": 10,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36"
+  }
+
+}

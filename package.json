@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "clivas": "^0.2.0",
+    "commander": "^2.9.0",
+    "nodejs-websocket": "^1.6.0",
+    "rimraf": "^2.5.3",
+    "webtorrent": "^0.95.2"
+  }
+}
